@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Briefing Dashboard</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap)" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .category-block {
+            margin-bottom: 3rem;
+        }
+        .category-title {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .news-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .news-headline {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+        .news-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .news-content p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tägliches Nachrichten-Briefing</h1>
+        <p>100 Quellen verifiziert • Longform-Analyse • Automatisiert via GitHub</p>
+    </header>
+
+    <div class="container">
+        <section class="category-block">
+    <h2 class="category-title">Neue Technik</h2>
+
+    <article class="news-card">
+        <h3 class="news-headline">Digitaler Euro: Telekom und Telefónica bereiten die Infrastruktur vor</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Meldung zur Zentralbank-Vergabe von Konnektivitätsdiensten; Hintergrund: laufende Vorbereitungsphase des digitalen Euro</div>
+        <div class="news-content">
+            <p>Die Europäische Zentralbank hat offenbar die Weichen für die technische Umsetzung des digitalen Euro gestellt: Die Deutsche Telekom und der spanische Telefónica-Konzern gehören zu den Konsortien, die Konnektivitätsdienste für die geplante digitale Währung leisten sollen. Konnektivität meint in diesem Zusammenhang die Kommunikations- und Netzwerkschicht, über die Zahlungsverkehrsdaten zwischen Banken, Zahlungsdienstleistern, Händlern und der Zentralbankinfrastruktur sicher übertragen werden – ein unspektakulärer, aber kritischer Baustein.</p>
+            <p>Bemerkenswert ist die europäische Stoßrichtung: Mit Telekom und Telefónica setzt die EZB auf etablierte, regulierte Telekommunikationskonzerne aus der EU statt auf außereuropäische Cloud-Anbieter. Das ist auch eine geopolitische Entscheidung. Der digitale Euro soll als Ergänzung zum Bargeld fungieren, nicht als Ersatz, und die europäische Zahlungsinfrastruktur unabhängiger von US-dominierten Kartennetzwerken und großen Tech-Plattformen machen.</p>
+            <p>Für Verbraucherinnen und Verbraucher ändert sich kurzfristig nichts. Die EZB betont, dass es sich um Vorbereitungsarbeit handelt und eine endgültige Einführungsentscheidung noch aussteht. Kritisch bleibt die Debatte um Datenschutz, Programmierbarkeit und Limits für Privatkonten: Diese Fragen entscheiden darüber, ob der digitale Euro angenommen wird oder als staatliches Kontrollinstrument wahrgenommen wird. Klar ist: Die technische Grundlage wird jetzt gelegt – die politische Debatte folgt später.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Grafikkarten-Preise steigen weiter: AMD Radeon im November erneut teurer</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Berichte aus chinesischen Distributionskreisen; Hintergrund: angespannte Halbleiter- und Speichermärkte, GDDR6-Kosten</div>
+        <div class="news-content">
+            <p>Die Preisspirale bei Grafikkarten dreht sich weiter. Aus China heißt es, dass AMD im November erneut die Preise für Radeon-Grafikkarten anheben wird. Als Hauptgrund gelten bis zu zehn Prozent höhere Kosten für GDDR6-Speicher. Die knappen Ressourcen in der Halbleiterbranche – befeuert durch die massive Nachfrage nach KI-Beschleunigern – schlagen inzwischen auch auf den Gaming-Markt durch.</p>
+            <p>Für PC-Spieler ist das eine unangenehme Entwicklung: Bereits in den vergangenen Monaten waren Grafikkartenpreise gestiegen, teils durch Wechselkurs- und Zoll effekte, teils durch Verknappung. Die Hersteller haben wenig Spielraum, weil Speicher ein zentraler Kostenblock ist und die Kapazitäten bei DRAM-Herstellern für KI-Produkte reserviert werden. Wer einen Neukauf plant, könnte daher gezwungen sein, schneller zuzugreifen als gewünscht.</p>
+            <p>Gleichzeitig deutet sich an, dass die Preise nicht allein durch Nachfrage getrieben sind, sondern durch Angebotsverknappung. Das macht Prognosen schwierig: Sollte sich die Speicherlage entspannen, könnten Preise wieder fallen – doch mittelfristig rechnen Beobachter mit anhaltendem Druck, solange KI-Infrastruktur Priorität genießt.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">KI-Klone auf Steam: Valve rät Studios zu schnellen Updates</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Entwicklerveranstaltung in Südkorea; Berichte über Erpressung von Indie-Studios mit KI-generierten Kopien</div>
+        <div class="news-content">
+            <p>Ein neues Problem erreicht die Spielebranche: Wer sein Spiel vorab auf Steam zeigt oder ankündigt, muss inzwischen mit Drohungen rechnen. Erpresser sollen Indie-Studios mit KI-generierten Kopien unter Druck setzen und einen früheren Release androhen, um den Originalschöpfern das Geschäft zu verderben. Bei einer Entwicklerveranstaltung in Südkorea wollte ein Teilnehmer von Valve wissen, welchen Schutz die Plattform bietet.</p>
+            <p>Valves Antwort ist pragmatisch: Betroffene Studios sollten zügig Updates veröffentlichen, um ihre Urheberschaft und Weiterentwicklung zu belegen. Das ist juristisch wie strategisch relevant, denn Plattformbetreiber reagieren meist auf klare Nachweise. Zugleich zeigt sich die strukturelle Schwäche: KI-generierte Klone sind billig herzustellen, schwer zu unterschreiden und treffen kleine Teams besonders hart.</p>
+            <p>Die Debatte berührt auch die Grundlagen des Urheberrechts. Wie schützt man Spielmechaniken, Artstyles oder Namen, wenn ein Modell in Stunden eine Kopie erzeugt? Für Indie-Studios wird das zu einem Kostenfaktor – Anwälte statt Entwicklung. Valve steht damit in der Verantwortung, nicht nur zu beraten, sondern klare Meldewege und schnelle Sperrmechanismen zu etablieren.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">4,1 Milliarden Jahre alter Mars-Meteorit liefert Hinweise auf Wasser</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Laboruntersuchung eines Sahara-Fundstücks; Hintergrund: Mars-Meteoriten als Zeugen der Planetenfrühe</div>
+        <div class="news-content">
+            <p>Ein unscheinbarer Stein aus der Sahara hat sich im Labor als eines der ältesten bekannten Bruchstücke des Mars entpuppt: 4,1 Milliarden Jahre alt. Er erzählt von einer Zeit, in der unser Nachbarplanet möglicherweise ziemlich erdähnlich war – mit flüssigem Wasser, einer dichteren Atmosphäre und Bedingungen, die Leben zumindest nicht ausschlossen.</p>
+            <p>Meteoriten vom Mars sind selten, weil sie erst durch einen Einschlag aus dem Schwerefeld des Planeten geschleudert werden müssen. Umso wertvoller sind die mineralogischen Spuren, die auf Wasser-Gesteins-Wechselwirkungen hindeuten. Sie ergänzen die Daten der Mars-Rover, die an der Oberfläche nach organischen Molekülen und Sedimentstrukturen suchen.</p>
+            <p>Die Frage, wann und wie lange Mars Wasser hatte, ist zentral für die Astrobiologie. Neue Datierungen verschieben die Zeitfenster und damit die Wahrscheinlichkeit, dass sich einfaches Leben entwickeln konnte. Der Fund zeigt auch, wie wichtig private und institutionelle Sammlungen sind – und wie schnell ein „Stein“ zum Schlüssel für Fragen von planetarer Bedeutung wird.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Tor Browser 16.0: Neue Firefox-Basis, überarbeitete Einstellungen</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Tor-Projekt, Release für Desktop und Android</div>
+        <div class="news-content">
+            <p>Das Tor-Projekt hat Version 16.0 des Tor Browsers für Desktop und Android veröffentlicht. Die wichtigste Neuerung liegt im Unterbau: Der Browser basiert ab sofort auf einer neueren Firefox-Version. Das bringt Sicherheitspatches, schnellere Rendering-Engines und bessere Kompatibilität mit modernen Webstandards – ohne das Anonymitätsversprechen aufzugeben.</p>
+            <p>Zusätzlich wurden die Einstellungen überarbeitet, um Nutzern die Wahl zwischen Sicherheitsstufen zu erleichtern. Wer den höchsten Schutz aktiviert, muss mit Funktionseinbußen leben, etwa deaktiviertem JavaScript. Das ist kein Bug, sondern der Preis für Anonymität gegen Fingerprinting und Skript-Angriffe.</p>
+            <p>Die Aktualisierung ist auch ein Signal: Während viele Browser Anonymität als Feature behandeln, bleibt Tor ein Werkzeug für Journalisten, Aktivisten und Menschen in Zensur-Regimen. Wer es nutzt, sollte zeitnah upgraden – veraltete Browser-Versionen sind ein Einfallstor.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Disney Plus: HDR-Workaround mit Haken – Millionen schauen in die Röhre</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Patentstreit in Europa; einstweilige Verfügung November 2025; betroffen: Deutschland und weitere europäische Länder</div>
+        <div class="news-content">
+            <p>Wegen eines Patentstreits muss Disney Plus in vielen europäischen Ländern, darunter Deutschland, derzeit auf HDR-Formate sowie 3D und 4K UHD verzichten. Nach einer einstweiligen Verfügung wegen Patentverletzung im November 2025 hatte der Dienst zunächst Dolby Vision und weitere hochwertige Formate abgeschaltet. Ein Workaround soll nun Abhilfe schaffen – doch der hat mehrere Haken.</p>
+            <p>Betroffen sind vor allem Nutzer mit entsprechenden Fernsehern und Abonnements, die für Premium-Bildqualität zahlen. Sie erhalten derzeit eine schlechtere Bildqualität als vereinbart, ohne dass der Preis sinkt. Das ist juristisch heikel und sorgt für Frust bei einer zahlungswilligen Kundschaft.</p>
+            <p>Der Fall zeigt, wie Patentstreitigkeiten die Produkterfahrung von Millionen beeinflussen können – weit weg von Gerichtssälen. Für Disney ist das ein Reputationsproblem; für die Patentinhaber ein Hebel. Verbraucher sollten prüfen, ob Erstattungen oder Sonderkündigungsrechte bestehen.</p>
+        </div>
+    </article>
+</section>
+
+<section class="category-block">
+    <h2 class="category-title">Wissenschaft</h2>
+
+    <article class="news-card">
+        <h3 class="news-headline">Ostantarktis könnte trotz starker Erwärmung Eis behalten</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Neue Langzeitsimulation; Vergleich Ostantarktis, Westantarktis und Grönland</div>
+        <div class="news-content">
+            <p>Mehr Wärme bedeutet nicht überall zwangsläufig schnelleren Eisverlust. Eine neue Langzeitsimulation zeigt, dass die Ostantarktis selbst bei über zehn Grad globaler Erwärmung große Teile ihres Eisschilds behalten könnte. Der Grund: Mehr Schnee fällt, und zusätzliche Wolken schwächen die Sonneneinstrahlung ab. Beide Effekte können den Massenverlust teilweise kompensieren.</p>
+            <p>Für die Westantarktis und Grönland sagt dasselbe Modell dagegen erhebliche Verluste voraus. Das ist deshalb wichtig, weil die Westantarktis als besonders instabil gilt: Ihre Gletscher liegen teilweise unter dem Meeresspiegel und können durch warmes Ozeanwasser von unten schmelzen. Die Ostantarktis ist deutlich größer und höher gelegen – aber eben nicht immun.</p>
+            <p>Die Ergebnisse sind keine Entwarnung. Sie zeigen, wie unterschiedlich Regionen reagieren und wie wichtig es ist, nicht von einem „globalen Mittel“ auf lokale Folgen zu schließen. Für den Meeresspiegel bleibt der Westen entscheidend. Die Studie unterstreicht zugleich die Unsicherheit von Modellprojektionen über Jahrhunderte.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Sechslagiges Graphen zeigt ungewöhnliche Quantenzustände</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Forschung an sechslagigem, versetzt gestapeltem Graphen bei extremen Temperaturen; Cornell/Ithaca</div>
+        <div class="news-content">
+            <p>Graphen aus sechs gegeneinander versetzten Atomlagen zeigt bei extremer Kälte eine ungewöhnliche Vielfalt elektronischer Zustände. In zwei Bereichen des Materials fanden sich Hinweise auf Supraleitung, während Elektronen und sogenannte Löcher gleichzeitig vorhanden waren. Außerdem lässt sich das Verhalten einer besonderen magnetischen Ordnung durch elektrische Felder umkehren.</p>
+            <p>Das ist mehr als ein Laborartefakt: Graphen gilt als Plattform für die Erforschung korrelierter Elektronensysteme. Wenn sich Supraleitung und Magnetismus in einem Material durch elektrische Felder steuern lassen, entstehen Perspektiven für Quantenbauteile – allerdings bei Temperaturen nahe dem absoluten Nullpunkt, also weit entfernt von Alltagstauglichkeit.</p>
+            <p>Die Faszination liegt in der Kontrolle: Statt neue Materialien zu synthetisieren, lassen sich Zustände durch Stapelung und Felder einstellen. Das macht das System zu einem Spielplatz für Grundlagenphysik – und zu einem Testfall dafür, wie emergent Phänomene aus einfachen Bausteinen entstehen.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Amazonas-Regenwald ist keine CO2-Senke mehr</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Messdaten zu Kohlenstoffflüssen; Hintergrund: Entwaldung, Dürren, Brände</div>
+        <div class="news-content">
+            <p>Die „grüne Lunge“ der Erde ist zu einer CO2-Quelle geworden: Der Amazonas-Regenwald gibt inzwischen mehr Kohlendioxid ab als er aufnimmt, wie Messdaten belegen. Damit kippt ein System, das jahrzehntelang als Puffer im globalen Kohlenstoffhaushalt galt. Die Ursachen sind bekannt: Entwaldung, Brände, Dürren und die Schwächung der Photosyntheseleistung durch Hitzestress.</p>
+            <p>Die Folgen sind doppelt problematisch. Erstens fehlt eine Senke, die Klimamodelle eingeplant hatten. Zweitens entstehen Rückkopplungen: Weniger Regenwald bedeutet weniger Verdunstung, was regionale Niederschläge verringert und die Waldsterbe-Risiken erhöht. Der Amazonas könnte sich in Teilen in eine Savanne verwandeln – ein Kipppunkt mit globalen Folgen.</p>
+            <p>Politisch ist das brisant, weil Schutzmaßnahmen und wirtschaftliche Interessen direkt kollidieren. Wissenschaftlich bleibt die Frage, wie viel des Waldes noch gerettet werden kann und wo die Schwelle liegt.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Zugvögel leiden unter Jetlag – mit Navigationsfehlern</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Studie zu Atlantiksturmtauchern; Hintergrund: Sonnenkompass und innere Uhr</div>
+        <div class="news-content">
+            <p>Wenn Vögel weite Strecken zurücklegen, stimmt ihre innere Uhr nicht mehr mit dem Sonnenstand überein. Das führt zu Navigationsfehlern, zeigt eine Studie an Atlantiksturmtauchern. Auf ihrem Weg vom Nordatlantik an die Küste Großbritanniens kommen einige Vögel vom Kurs ab, weil ihr Sonnenkompass unter der Zeitverschiebung leidet. Ihr Zuhause erreichen die Tiere dennoch.</p>
+            <p>Das ist ein schönes Beispiel dafür, wie Tierwanderungen an präzise Umweltreize gekoppelt sind. Zugvögel kalibrieren ihren Kompass an der Sonne und gleichen die Tageszeit über ihre circadiane Uhr ab. Verschiebt sich beides gegeneinander, entstehen systematische Abweichungen.</p>
+           
+    </div>
+</body>
+</html>
