@@ -2,8 +2,8 @@ name: Tägliches AI Briefing Generieren
 
 on:
   schedule:
-    - cron: '0 5 * * *' # Läuft jeden Tag um 05:00 Uhr UTC
-  workflow_dispatch: # Erlaubt auch einen manuellen Start per Klick
+    - cron: '0 5 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -29,7 +29,9 @@ jobs:
         run: python agent.py
 
       - name: Website auf GitHub Pages veröffentlichen
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          artifact_name: github-pages
-          path: .
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
