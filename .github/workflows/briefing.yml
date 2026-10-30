@@ -1,0 +1,34 @@
+name: Tägliches AI Briefing Generieren
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Läuft jeden Tag um 05:00 Uhr UTC
+  workflow_dispatch: # Erlaubt auch einen manuellen Start per Klick
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository herunterladen
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Pakete installieren
+        run: pip install openai feedparser
+
+      - name: Skript ausführen
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python "AI-Agent 2.py"
+
+      - name: Website auf GitHub Pages veröffentlichen
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
