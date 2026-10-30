@@ -23,7 +23,7 @@ jobs:
       - name: Skript ausführen
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python "AI-Agent 2.py"
+        run: python "agent.py"
 
       - name: Website auf GitHub Pages veröffentlichen
         uses: peaceiris/actions-gh-pages@v3
