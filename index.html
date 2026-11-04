@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Briefing Dashboard</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap)" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .category-block {
+            margin-bottom: 3rem;
+        }
+        .category-title {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .news-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .news-headline {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+        .news-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .news-content p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tägliches Nachrichten-Briefing</h1>
+        <p>100 Quellen verifiziert • Longform-Analyse • Automatisiert via GitHub</p>
+    </header>
+
+    <div class="container">
+        <section class="category-block">
+    <h2 class="category-title">Neue Technik</h2>
+
+    <article class="news-card">
+        <h3 class="news-headline">KI-Boom treibt AMDs Servergeschäft – und verändert den Wettbewerb bei Prozessoren</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> RSS-Zusammenfassung zu AMD; Podcast „Bit-Rauschen“ über Intels Core-300-Serie für günstige Notebooks.</div>
+        <div class="news-content">
+            <p>Die vorliegenden Feed-Daten führen AMDs starkes Servergeschäft auf den Boom bei künstlicher Intelligenz zurück. Konkrete Umsätze, Wachstumsraten oder Gewinnzahlen enthält die Zusammenfassung jedoch nicht. Der Befund verweist auf die zentrale Rolle leistungsfähiger Serverprozessoren und Beschleuniger beim Ausbau von Rechenzentren für KI-Anwendungen: Die Nachfrage nach entsprechender Infrastruktur kann sich unmittelbar in Geschäftszahlen von Halbleiterherstellern niederschlagen.</p>
+            <p>Parallel dazu beleuchtet der Podcast „Bit-Rauschen“ Intels Core-300-Prozessoren für preisgünstige Notebooks. Intel senkt bei dieser Produktreihe den Fertigungsaufwand; die Folge 2026/22 erklärt laut Feed, an welchen Stellen und auf welche Weise Kosten eingespart werden. Für den Markt ist dabei die Abwägung entscheidend: Günstigere Herstellung kann preiswerte Geräte ermöglichen, doch relevant bleibt, welche Leistungsmerkmale und technischen Reserven Käuferinnen und Käufer dafür erhalten. Einzelheiten zu konkreten Einschnitten nennt der RSS-Eintrag nicht.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">EuGH-Gutachten: Generative KI kann unter bestimmten Umständen Verlagsrechte verletzen</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Gutachten von EuGH-Generalanwalt Maciej Szpunar; erstes Verfahren des Gerichtshofs zu generativer KI und Presseinhalten, mit Ausgangspunkt in Ungarn.</div>
+        <div class="news-content">
+            <p>Im Streit um die Nutzung journalistischer Inhalte durch generative KI-Modelle hat EuGH-Generalanwalt Maciej Szpunar einen wichtigen rechtlichen Hinweis gegeben: KI-Chatbots können „unter bestimmten Umständen“ Rechte von Presseverlagen verletzen. Das Gutachten ist noch kein Urteil und entscheidet den konkreten Rechtsstreit nicht endgültig. Der Gerichtshof folgt den Einschätzungen seiner Generalanwälte häufig, ist dazu aber nicht verpflichtet.</p>
+            <p>Das Verfahren ist nach den vorliegenden Angaben die erste Rechtssache zur generativen KI, die den Europäischen Gerichtshof erreicht hat. Im Kern steht die Frage, wie bestehende Regeln zum Schutz von Presseveröffentlichungen und urheberrechtlich geschützten Inhalten auf KI-Systeme anzuwenden sind. Für Verlage und Urheber geht es darum, ob und wann die Verwendung ihrer Beiträge durch solche Modelle rechtlich relevant ist; für Anbieter um die Grenzen zulässiger Nutzung. Welche konkreten Umstände eine Verletzung begründen, muss sich aus dem weiteren Verfahren und dem späteren Urteil ergeben.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Musk sucht für Starlink den Einstieg in den US-Mobilfunkmarkt</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Bericht und Analyse von Achim Sawall über SpaceX, Starlink und den möglichen Kauf des Mobilfunkanbieters Boost Mobile.</div>
+        <div class="news-content">
+            <p>SpaceX verhandelt laut Feed über den Kauf von Boost Mobile. Der mögliche Zukauf soll Elon Musks Bestrebungen unterstützen, Starlink in den USA zu einem Mobilfunkanbieter auszubauen. Als Motiv nennt der Bericht den Zugang zu Netzkapazität über einen sogenannten Mobile Virtual Network Operator (MVNO). Ein MVNO verfügt nicht zwingend über ein eigenes flächendeckendes Funknetz, sondern kann Mobilfunkleistungen auf der Infrastruktur anderer Netzbetreiber anbieten.</p>
+            <p>Der Vorgang zeigt, dass der Ausbau satellitengestützter Kommunikation allein nicht automatisch den vollständigen Eintritt in den Mobilfunkmarkt bedeutet: Für einen Dienst, der Kundinnen und Kunden auch außerhalb direkter Satellitenverbindungen erreichen soll, können ergänzende Vereinbarungen oder bestehende Anbieterstrukturen wichtig sein. Die Feed-Zusammenfassung nennt weder einen vereinbarten Kaufpreis noch einen Abschluss der Verhandlungen. Es handelt sich daher um ein Vorhaben, nicht um eine vollzogene Übernahme.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Digitalpolitische Souveränität auf dem Prüfstand: Bundesregierung setzt weiter auf große US-Cloudanbieter</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Kommentar zur Rede von Bundeskanzler Friedrich Merz beim Digital-Gipfel und zur Google-Cloud für deutsche Geheimdienste.</div>
+        <div class="news-content">
+            <p>Bundeskanzler Friedrich Merz hat beim Digital-Gipfel der Bundesregierung das Ziel betont, „europäische Souveränität“ im Digitalen zu erreichen. Der Beitrag stellt dem Anspruch eine kritische Beobachtung gegenüber: Big Tech bleibe zugleich an Bord, und die Google-Cloud für deutsche Geheimdienste werfe Fragen dazu auf, wie weit das politische Verständnis digitaler Souveränität tatsächlich reicht.</p>
+            <p>Der Konflikt betrifft nicht nur die Wahl eines einzelnen Cloudprodukts, sondern die Abhängigkeit öffentlicher Stellen von globalen Technologieunternehmen und deren Infrastruktur. Der Beitrag bewertet die Regierungsposition als „weichgespült und problematisch“; konkrete technische oder vertragliche Details zur Cloud-Lösung sind im RSS-Auszug nicht enthalten. Damit bleibt offen, welche Schutzvorkehrungen, Kontrollrechte und Alternativen im konkreten Fall bestehen. Der grundsätzliche Zielkonflikt zwischen verfügbaren leistungsfähigen Diensten und europäischer Kontrolle über digitale Systeme steht jedoch im Mittelpunkt.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Digitalisierung im Alltag: Papierbelege könnten ab 2028 entfallen, Führerschein soll aufs Smartphone kommen</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Bundesregierung zu einem Gesetzentwurf über Belege; RSS-Zusammenfassung zu einem geplanten digitalen Führerschein.</div>
+        <div class="news-content">
+            <p>Die Bundesregierung will die Pflicht, Kundinnen und Kunden im Laden zwingend einen Papierbeleg auszuhändigen, nach einem neuen Gesetzentwurf ab 2028 abschaffen. Der Schritt würde die Ausgabe von Kassenbons als Standardpflicht verändern und könnte den Papierverbrauch im Einzelhandel reduzieren. Der Feed enthält keine Angaben dazu, welche Ausnahmen oder Anforderungen an digitale Belege vorgesehen sind und ob Kundinnen und Kunden weiterhin auf Papier bestehen könnten.</p>
+            <p>Daneben kündigt die RSS-Zusammenfassung an, dass der Führerschein künftig in einer Smartphone-App verfügbar sein soll. Details zu Einführungstermin, technischer Umsetzung, Anerkennung im Ausland oder dem Verhältnis zum physischen Führerschein fehlen. Beide Vorhaben stehen für eine Verlagerung alltäglicher Nachweise vom Papier in digitale Systeme – und werfen damit Fragen nach Zugänglichkeit, Datenschutz und verlässlicher Nutzung auf, die aus den vorliegenden Kurzmeldungen noch nicht zu beantworten sind.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Google testet KI-Rechenzentrum im Orbit – erster Satellit sendet ein Weltraumgedicht</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Bericht über einen Google-Prototyp für ein Mini-Rechenzentrum im All, gestartet mit einer SpaceX-Falcon-9-Rakete.</div>
+        <div class="news-content">
+            <p>Knapp drei Wochen nach dem Start mit einer Falcon 9 hat Googles Prototyp eines Mini-Rechenzentrums im All erstmals Daten erzeugt und zur Erde übertragen. Das Ergebnis war ein dreizeiliges Gedicht über den Weltraum. Laut Bericht dauerte die Inbetriebnahme rund drei Wochen; in dieser Phase wurden unter anderem die KI-Beschleuniger und weitere Systeme aktiviert.</p>
+            <p>Der poetische Inhalt ist vor allem ein erster Funktionsnachweis: Der Satellit konnte nach seiner Inbetriebnahme Daten generieren und übertragen. Aus dem Feed gehen keine Angaben zu Rechenleistung, Energieversorgung, dauerhafter Betriebsfähigkeit oder einem geplanten kommerziellen Einsatz hervor. Der Test ist deshalb nicht mit einem bereits etablierten orbitalen Rechenzentrumsdienst gleichzusetzen, sondern belegt zunächst einen frühen technischen Schritt in einem experimentellen Vorhaben.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Weitere Technikmeldungen: Alterskennzeichnungen, Extremwetterwarnung und ungewöhnliche Hardware</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> RSS-Meldungen zu Apple App Store Connect, Mobilfunknetzen, einer Grafikkarte mit vier GPUs und einem geplanten Retrospiel.</div>
+        <div class="news-content">
+            <p>Apple erweitert die Altersfreigaben in App Store Connect um Angaben zu Standortfreigabe und Dating. Die Verwaltungsoberfläche dient Entwicklerinnen und Entwicklern zur Einreichung und Pflege ihrer Apps. Welche konkreten Altersstufen oder Kennzeichnungsregeln neu hinzukommen, lässt sich dem Feed nicht entnehmen. Die Ergänzung soll die Einordnung entsprechender Funktionen im App Store präzisieren.</p>
+            <p>Eine weitere Zusammenfassung meldet, dass Mobilfunkanbieter wegen Extremwetters politische Unterstützung einfordern. Welche Ereignisse oder Maßnahmen sie konkret ansprechen, ist nicht ausgeführt. Aus dem Zusammenhang ergibt sich lediglich, dass die Belastbarkeit von Kommunikationsnetzen bei Wetterextremen als politisches und infrastrukturelles Thema behandelt wird.</p>
+            <p>Auf Fotos ist außerdem eine mutmaßlich für Mining-Rigs gedachte, ungewöhnlich breite Platine mit vier Radeon-RX-470-Grafikprozessoren zu sehen. Die vier GPUs und 32 Speicherchips werden laut Beschreibung über vier 8-Pin-Stromanschlüsse versorgt. Unabhängig davon kündigt Art of Play für „Bill &amp; Ted’s Excellent Adventure: Arcade“ eine neue Spieladaption des Films von 1989 an: vorgesehen sind pixelige Sidescroller-Action, Minispiele und ein Koop-Modus für PC und Konsolen. Eine Crowdfunding-Kampagne soll im Februar 2027 starten; die Finanzierung ist damit noch nicht gesichert.</p>
+        </div>
+    </article>
+</section>
+
+<section class="category-block">
+    <h2 class="category-title">Wissenschaft</h2>
+
+    <article class="news-card">
+        <h3 class="news-headline">Eisenpulver könnte saisonale Energiespeicherung günstiger machen – Modellrechnung nennt Milliardenpotenzial</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Wissenschaftliche Modellrechnung zur Speicherung erneuerbarer Energie und zur Nutzung umgebauter Kohlekraftwerke.</div>
+        <div class="news-content">
+            <p>Eisenpulver könnte dazu dienen, im Sommer erzeugte erneuerbare Energie über Monate zu speichern und im Winter wieder nutzbar zu machen. Eine neue Modellrechnung beziffert mögliche Einsparungen in großen Teilen Europas auf jährlich 15 bis 18 Milliarden Euro. Das Konzept setzt darauf, Energie in einer speicherbaren Form zu lagern und später in umgebauten Kohlekraftwerken wieder bereitzustellen.</p>
+            <p>Die Zahl ist ausdrücklich ein theoretisches Potenzial, keine bereits erzielte Einsparung. Der Feed betont, dass das Ergebnis von technischen und wirtschaftlichen Annahmen abhängt, die sich erst in der Praxis bewähren müssen. Entscheidend wird unter anderem sein, ob sich die gesamte Prozesskette zuverlässig und zu vertretbaren Kosten betreiben lässt. Für die Energiewende adressiert das Verfahren ein zentrales Problem: den zeitlichen Abstand zwischen schwankender Erzeugung aus erneuerbaren Quellen und saisonal unterschiedlichem Energiebedarf.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Arktische Mikroben und Wurzeln könnten den Kohlenstoffkreislauf in gegensätzliche Richtungen beeinflussen</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Genomanalysen zu Porticoccus arcticus und wissenschaftliche Übersichtsarbeit zu Wurzeln in der sich erwärmenden Tundra.</div>
+        <div class="news-content">
+            <p>In den nährstoffarmen Oberflächengewässern des Arktischen Ozeans könnte das Bakterium Porticoccus arcticus einen ungewöhnlichen Stoffwechsel nutzen. Genomanalysen legen nahe, dass es Aceton abbauen und gelöstes Kohlendioxid in Zellbausteine einbauen kann. Lichtempfindliche Proteine könnten zusätzlich Sonnenenergie verfügbar machen. Ob diese vermutete Kombination tatsächlich unter natürlichen Bedingungen abläuft, ist laut Feed noch offen; die Hinweise beruhen zunächst auf der Analyse des Erbguts.</p>
+            <p>Auch an Land verändern sich mit der Erwärmung der Arktis die Bedingungen des Kohlenstoffkreislaufs. Während die Tundra grüner wird, können Wurzeln Kohlenstoff im Boden binden, zugleich aber Mikroorganismen zum Abbau älterer organischer Substanz anregen. Dadurch könnten sie sowohl Speicherung als auch Freisetzung von Kohlenstoff fördern. Welche Wirkung überwiegt, ist bislang unklar und für Klimaprognosen bedeutsam: Die Nettoeffekte biologischer Veränderungen in der Arktis sind nicht aus einer einzelnen Beobachtung abzuleiten.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">LHC weist extrem seltenen Zerfall eines Beauty-Quarks nach</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Teilchenphysik am Large Hadron Collider (LHC); erstmals beobachteter, jahrzehntelang gesuchter Zerfall.</div>
+        <div class="news-content">
+            <p>Physikerinnen und Physiker am LHC haben erstmals einen besonders seltenen Zerfall eines schweren Beauty-Quarks nachgewiesen. Der Vorgang tritt dem Bericht zufolge nur etwa einmal unter zehn Milliarden Fällen auf. Die Beobachtung beendet eine jahrzehntelange Suche nach diesem Zerfall und demonstriert, wie große Datenmengen und hochpräzise Messungen an Teilchenbeschleunigern seltene Prozesse sichtbar machen können.</p>
+            <p>Der Feed nennt weder den genauen Zerfallskanal noch die statistische Signifikanz oder mögliche Konsequenzen für konkrete Theorien. Ein Nachweis eines seltenen Prozesses ist für sich genommen daher nicht gleichbedeutend mit einer Entdeckung neuer Physik. Er schafft aber eine experimentelle Grundlage, um Vorhersagen der Teilchenphysik an einem bislang nicht beobachteten Vorgang zu prüfen.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Virtuelles Modell fragt, wie sich eine Erde ohne Leben entwickelt hätte</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Simulation einer hypothetischen abiotischen Erde, also eines Planeten ohne Entstehung von Leben.</div>
+        <div class="news-content">
+            <p>Ein virtuelles Modell untersucht, wie sich die Erde entwickelt haben könnte, wenn auf ihr niemals Leben entstanden wäre. Die Simulation bietet damit einen Vergleichsfall, der in der realen Erdgeschichte nicht direkt beobachtbar ist. Sie kann helfen, geologische und planetare Entwicklungen gedanklich von den Einflüssen lebender Organismen zu trennen.</p>
+            <p>Der RSS-Eintrag nennt keine Modellannahmen, Zeiträume oder konkreten Ergebnisse. Aussagen darüber, welche Eigenschaften der Erde ohne Leben anders ausgefallen wären, lassen sich aus der Kurzbeschreibung deshalb nicht seriös ergänzen. Zentral ist zunächst der Ansatz: Eine abiotische Vergleichswelt kann als Werkzeug dienen, um den Einfluss des Lebens auf die Entwicklung des Planeten besser einzuordnen.</p>
+        </div>
+    </article>
+
+    <article class="news-card">
+        <h3 class="news-headline">Fossile Eule aus der Grube Messel war wahrscheinlich tagaktiv</h3>
+        <div class="news-meta"><strong>Quellen/Kontext:</strong> Fossilfund aus der rund 47 Millionen Jahre alten Grube Messel; Hinweise aus dem Mageninhalt.</div>
+        <div class="news-content">
+            <p>In der Grube Messel wurde eine etwa 47 Millionen Jahre alte fossile Eule gefunden. Der erhaltene Mageninhalt legt nach Angaben des Feeds nahe, dass das Tier tagsüber auf die Jagd ging. Damit liefert der Fund Hinweise auf das Verhalten einer ausgestorbenen Eule, die sich nicht allein aus ihrer äußeren Gestalt erschließen lassen.</p>
+            <p>Der Mageninhalt kann Informationen über Nahrung und Jagdweise bewahren, die bei vielen Fossilien fehlen. Der RSS-Auszug enthält allerdings keine Angaben zu den gefundenen Beutetieren oder zur
+    </div>
+</body>
+</html>
